@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="css/style.css">
+<center><h1 class='title'>Tic-Tac-Toe</h1>
+<h1 class='title_3'><%=message%></h1>
+
+
+</center>
+
+
+
+<table id="table_size">
+    <tr>
+        <td><div class="win_display"><%=board.ttt_board[0]%></div></td>
+        <td class="middle_columns"><div class="win_display"><%=board.ttt_board[1]%></div></td>
+        <td><div class="win_display"><%=board.ttt_board[2]%></div></td>
+    </tr>
+    <tr>
+        <td class="top_bottom"><div class="win_display"><%=board.ttt_board[3]%></div></td>
+        <td class="middle_columns top_bottom"><div class="win_display"><%=board.ttt_board[4]%></div></td>
+        <td class="top_bottom"><div class="win_display"><%=board.ttt_board[5]%></div></td>
+    </tr>
+    <tr>
+        <td><div class="win_display"><%=board.ttt_board[6]%></div></td>
+        <td class="middle_columns"><div class="win_display"><%=board.ttt_board[7]%></div></td>
+        <td><div class="win_display"><%=board.ttt_board[8]%></div></td>
+    </tr>
+</table>
+<center>
+
+<p class='link'><a href='/new_game'> Play Again?</a></p>
+<p class='link'><a href='/results'>View Previous Games Results</a> </p>
+</center>

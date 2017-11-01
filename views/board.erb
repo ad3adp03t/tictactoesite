@@ -1,0 +1,26 @@
+<HTML>
+<link rel="stylesheet" href="./css/style.css">
+<center><h1 class='title'>Tic-Tac-Toe</h1>
+<h2 class='title_3'>It is <%=active_player%>'s turn.  Please select a tile.</h2>
+</center>
+<form action='/human_move' method='post'>
+
+<table id="table_size">
+	<tr>
+		<td><input class="square_size" type='submit' value='<%=board.ttt_board[0]%>' name='choice'></td>
+		<td class="middle_columns"><input class="square_size" type='submit' value='<%=board.ttt_board[1]%>' name='choice'></td>
+		<td><input class="square_size" type='submit' value='<%=board.ttt_board[2]%>' name='choice'></td>
+	</tr>
+	<tr>
+		<td class="top_bottom"><input class="square_size" type='submit' value='<%=board.ttt_board[3]%>' name='choice'></td>
+		<td class="middle_columns top_bottom"><input class="square_size" type='submit' value='<%=board.ttt_board[4]%>' name='choice'></td>
+		<td class="top_bottom"><input class="square_size" type='submit' value='<%=board.ttt_board[5]%>' name='choice'></td>
+	</tr>
+	<tr>
+		<td><input class="square_size" type='submit' value='<%=board.ttt_board[6]%>' name='choice'></td>
+		<td class="middle_columns"><input class="square_size" type='submit' value='<%=board.ttt_board[7]%>' name='choice'></td>
+		<td><input class="square_size" type='submit' value='<%=board.ttt_board[8]%>' name='choice'></td>
+	</tr>
+</table>
+</form>
+</HTML>

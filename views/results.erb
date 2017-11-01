@@ -1,0 +1,26 @@
+<HTML>
+<link rel="stylesheet" href="./css/style.css">
+<center><h1 class='title'>Tic-Tac-Toe</h1>
+
+<table id="myTable">
+  <tr class="header">
+    <th>X</th>
+    <th>O</th>
+    <th>Result</th>
+   
+  </tr>
+ 
+<%tictactoe.each do |value|%>
+<tr>
+<td><%=value['x']   %></td>
+<td><%=value['o']   %></td> 
+<td><%=value['result']   %></td>
+
+
+</tr>
+<%end%>
+</table>
+<p class='link'><a href='/new_game'> Play Again?</a>
+ 
+</center>
+</HTML>
