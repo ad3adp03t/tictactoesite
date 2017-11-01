@@ -33,8 +33,8 @@ post '/select_players' do
 	session[:player2_type] = params[:player2]
 	session[:human1] = 'no'
 	session[:human2] = 'no'
-	session[:pname1] = params[:name1]
-	session[:pname2] = params[:name2]
+	session[:pname1] = params[:pname1]
+	session[:pname2] = params[:pname2]
 	if session[:player1_type] == 'Human'
 		session[:player1] = Human.new('X')
 		session[:human1] = 'yes'
@@ -107,6 +107,8 @@ get '/check_game_state' do
 		erb :game_over, :locals => {board: session[:board], message: message}
 	elsif session[:board].full_board?
 		message = 'Its a tie'
+		player1 = session[:player1]
+		player2 = session[:player2]
 	
 		db.exec("INSERT INTO tictactoe(x, o, result, time) VALUES('#{session[:pname1]}', '#{session[:pname2]}',  '#{message}', '#{Time.now}')")
 		erb :game_over, :locals => {board: session[:board], message: message}

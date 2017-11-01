@@ -3,35 +3,37 @@
 <center>
 <h1 class='title'>Tic-Tac-Toe</h1>
 <h2 class='title_2'>Please Select Your Players</h2>
-	<form action='/select_players' method='post'>
-	<table>
-		<tr>
-			<td class='bold'>Player 1</td>
-			<input type="text" name="pname1" placeholder="Enter Player 1 name" required><br>Player 1 always requires a name<br>
-			<td class='bold'>Player 2</td><br>
-			<input type="text" name="pname2" placeholder="Enter Player 2 name" ><br>Only give player 2 a name if human is chosen<br>
-		</tr>
-		<tr>
-			<td>
-				<select name='player1'>
-				    <option value='Human'>Human - X </option>
-				    <option value='Easy'>Easy - X</option>
-				    <option value='Medium'>Medium - X</option>
-				    <option value='Impossible!'>Impossible - X</option>
-				</select>
-		    </td>
-		    <td>
-			    <select name='player2'>
-				    <option value='Human'>Human - O</option>
-				    <option value='Easy'>Easy - O</option>
-				    <option value='Medium'>Medium - O</option>
-				    <option value='Impossible!'>Impossible  - O</option>
-				    <input type="submit" value="Submit">
-				</select>
-		    </td>
-		</tr>
-	</table>
-		
-	</form>
+<form action='/select_players' method='post'>
+<table>
+<tr>
+<td class='bold'>Player 1</td>
+<input type="text" name="pname1" placeholder="Enter Player 1 name" required>
+<h4>Player 1 always requires a name</h4>
+<td class='bold'>Player 2</td>
+<input type="text" name="pname2" placeholder="Enter Player 2 name" >
+<h4>Only give player 2 a name if human is chosen</h4><br>
+</tr>
+<tr>
+<td>
+<select name='player1'>
+<option value='Human'>Human - X </option>
+<option value='Easy'>Easy - X</option>
+<option value='Medium'>Medium - X</option>
+<option value='Impossible!'>Impossible - X</option>
+</select>
+</td>
+<td>
+<select name='player2'>
+<option value='Human'>Human - O</option>
+<option value='Easy'>Easy - O</option>
+<option value='Medium'>Medium - O</option>
+<option value='Impossible!'>Impossible  - O</option>
+<input type="submit" value="Submit">
+</select>
+</td>
+</tr>
+</table>
+	
+</form>
 </center>
 </html>
